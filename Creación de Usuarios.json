@@ -1,0 +1,2027 @@
+{
+  "name": "Creación de Usuarios",
+  "nodes": [
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.empresa.toString().trim().toLowerCase() }}",
+                    "rightValue": "=socia",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    },
+                    "id": "e30328ce-d1f0-4e4a-ac6a-962033838167"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "socia bpo"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "ed26b9e6-90ab-48ac-b577-5d635b1f5b31",
+                    "leftValue": "={{ $json.empresa.toString().trim().toLowerCase() }}",
+                    "rightValue": "voce",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "vocegroup"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "a710a98d-9bcb-4c3b-851b-f443ae73cc6f",
+                    "leftValue": "={{ $json.empresa}}",
+                    "rightValue": "Punto Aliado Crédito",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "punto aliado credito"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "7ebd4aee-f9b7-437f-a0aa-b968953626e4",
+                    "leftValue": "={{ $json.empresa.toString().trim().toLowerCase() }}",
+                    "rightValue": "punto aliado seguros",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Punto Aliado Seguros"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "354f32ff-37b9-4229-8cf5-664cd6f6c867",
+                    "leftValue": "={{ $json.empresa.toString().trim().toLowerCase() }}",
+                    "rightValue": "agenciauto",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "agenciauto"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "8e9fbad2-d5c5-460d-93c4-7de77614ad55",
+                    "leftValue": "={{ $json.empresa.toString().trim().toLowerCase() }}",
+                    "rightValue": "automotora",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Automotora"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "9084726b-f78e-405c-b11b-e6bc09d18e7c",
+                    "leftValue": "={{ $json.empresa.toString().trim().toLowerCase() }}",
+                    "rightValue": "megauto",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Megauto"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "3b5f1423-41dc-402a-98bf-b24c9351a928",
+                    "leftValue": "={{ $json.empresa.toString().trim().toLowerCase() }}",
+                    "rightValue": "otobai motor",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Otobai motor"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "8c40b766-7df0-42c6-aa8a-93d2ac71793b",
+                    "leftValue": "={{ $json.empresa.toString().trim().toLowerCase() }}",
+                    "rightValue": "autoamerica",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "autoamerica"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "401af480-0639-4387-8266-f03a2724f313",
+                    "leftValue": "={{ $json.empresa.toString().trim().toLowerCase() }}",
+                    "rightValue": "automax",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Automax"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "949c6198-06ac-41e5-8ff0-ba9c30e9df19",
+                    "leftValue": "={{ $json.empresa.toString().trim().toLowerCase() }}",
+                    "rightValue": "hino",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Hino"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "534bcbd3-5457-42c1-a0cb-089c2dd90c96",
+                    "leftValue": "={{ $json.empresa.toString().trim().toLowerCase() }}",
+                    "rightValue": "MG Emotor",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "MG Emotor"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "d1d42766-832b-4a9c-8a9e-962730a5e694",
+                    "leftValue": "={{ $json.empresa.toString().trim().toLowerCase() }}",
+                    "rightValue": "grupo agenciauto",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Grupo Agenciauto"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "ebbf3b4f-0f4d-45c5-b9d7-36107406b4d5",
+                    "leftValue": "={{ $json.empresa }}",
+                    "rightValue": "aa",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "aa"
+            }
+          ]
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -1920,
+        2672
+      ],
+      "id": "bd20f6b7-4d6a-4092-a22c-f709c6c051f5",
+      "name": "Resolver Directorio (Empresa)"
+    },
+    {
+      "parameters": {
+        "resource": "item",
+        "site": {
+          "__rl": true,
+          "value": "socia.sharepoint.com,8b2a2cab-01d3-4154-8998-dbb8e13c6679,20598b3e-4c3c-4b86-900b-0f7dbd440a72",
+          "mode": "list",
+          "cachedResultName": "Intranet Grupo"
+        },
+        "list": {
+          "__rl": true,
+          "value": "c26599a7-0965-485d-a57e-f912f8c9ed0e",
+          "mode": "list",
+          "cachedResultName": "F_Altas_Adicionales"
+        },
+        "filter": "fields/Estado eq 'Proceso'",
+        "options": {
+          "fields": [
+            "fields"
+          ]
+        },
+        "simplify": false,
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.microsoftSharePoint",
+      "typeVersion": 1,
+      "position": [
+        -2976,
+        2848
+      ],
+      "id": "95baeab9-3ab0-4ce4-81d8-79973a666ee3",
+      "name": "Sharepoint Produccion",
+      "credentials": {
+        "microsoftSharePointOAuth2Api": {
+          "id": "ioqEOTNJIkXYe3xe",
+          "name": "Microsoft SharePoint account 5"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -3168,
+        2848
+      ],
+      "id": "b0d77d97-5983-4987-9088-9c3ec008e6b5",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "DVP1FYgEuYwJ40MH",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/DVP1FYgEuYwJ40MH",
+          "cachedResultName": "Sub-Socia"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {
+          "waitForSubWorkflow": true
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1072,
+        1248
+      ],
+      "name": "Call Socia",
+      "id": "055be04f-f047-447c-8e8c-9a0590026e4e"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "fEMxSfwZWwfbGygp",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/fEMxSfwZWwfbGygp",
+          "cachedResultName": "Sub-voce"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1072,
+        1504
+      ],
+      "name": "Call Sub-voce",
+      "id": "b147c237-e292-41a0-a35c-205d5db6923a"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "NzsTgvlsbKzGgaUb",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/NzsTgvlsbKzGgaUb",
+          "cachedResultName": "Sub-PuntoAliadoCredito"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1072,
+        1744
+      ],
+      "name": "Call Sub-PuntoAliadoCredito",
+      "id": "e41fc619-500a-49dd-8adf-0e9ea0b61c44"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "ziPu7TiQkNHDqXel",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/ziPu7TiQkNHDqXel",
+          "cachedResultName": "Sub-PuntoAliadoSeguros"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1072,
+        2016
+      ],
+      "name": "Call Sub-PuntoAliadoSeguros",
+      "id": "2e4ed604-b714-44a8-9634-50ca754279fd"
+    },
+    {
+      "parameters": {
+        "content": "## AD DE SOCIA\n",
+        "height": 1152,
+        "width": 432,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -1168,
+        1120
+      ],
+      "typeVersion": 1,
+      "id": "73efbdc6-f782-4243-900f-78310e4813ee",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "froNDKsAU6pzXNlb",
+          "mode": "list"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1072,
+        2528
+      ],
+      "name": "Call Sub-agenciauto",
+      "id": "0b09e01f-2fcd-4154-ab9e-66c20c5e8fec"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "97jjE7Cugr4DYPRl",
+          "mode": "list"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1072,
+        2752
+      ],
+      "name": "Call Sub-Automotora",
+      "id": "35554206-d108-4189-85a6-a32fc167f91b"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "62zGLKparbcWgMNX",
+          "mode": "list"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1072,
+        2976
+      ],
+      "name": "Call Sub-megauto",
+      "id": "8dbebc4e-6eb9-4b1b-b0f9-d09bf53d7a4e"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "z7LWqizODmGxYirA",
+          "mode": "list"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1072,
+        3232
+      ],
+      "name": "Call Sub-otobai motor",
+      "id": "2c990d48-ad39-4d49-99df-5ce350eb89f7"
+    },
+    {
+      "parameters": {
+        "content": "## AD Agenciauto.Socia\n",
+        "height": 1152,
+        "width": 432,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -1184,
+        2352
+      ],
+      "typeVersion": 1,
+      "id": "28d55635-fca2-4dee-a0d2-04ce3beee934",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## F_AltasUsuarios",
+        "height": 304,
+        "width": 688,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -3232,
+        2704
+      ],
+      "typeVersion": 1,
+      "id": "ee100a46-b217-4728-805e-a98151922457",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## F_AltasUsuariosPrueba",
+        "height": 256,
+        "width": 656,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -3232,
+        2048
+      ],
+      "typeVersion": 1,
+      "id": "2b4f3301-9795-4584-9432-01b3ae4f7c37",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "oh9TO1d86aKL6Wsh",
+          "mode": "list"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1072,
+        3808
+      ],
+      "name": "Call My Sub-Autoamerica",
+      "id": "5b827164-96f4-483c-895e-2e7447673973"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "fVOVdl0Zv3b7xI5C",
+          "mode": "list"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1072,
+        4064
+      ],
+      "name": "Call My Sub-Automax",
+      "id": "37d5f318-4ab5-45c3-8f90-8358b4daf192"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "qcU8poiaL98GpRWV",
+          "mode": "list"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1072,
+        4288
+      ],
+      "name": "Call My Sub-Hino",
+      "id": "98644666-149f-4a16-955b-9eaaf6fbf6c1"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "ypZSuIrAzeaX9ABU",
+          "mode": "list"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1072,
+        4496
+      ],
+      "name": "Call My Sub-Trafalgar",
+      "id": "03da0a33-0eb8-4631-85ed-d496c3d9252a"
+    },
+    {
+      "parameters": {
+        "content": "## AD Autoamerica.Socia\n",
+        "height": 1152,
+        "width": 432,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -1168,
+        3568
+      ],
+      "typeVersion": 1,
+      "id": "05905d5e-d757-43a3-8c50-7a014fa16451",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "FyoZlgarfTvvRKoj",
+          "mode": "list"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1088,
+        5056
+      ],
+      "name": "Call My Sub-grupo agenciauto",
+      "id": "9bd16c94-0e37-468b-9dfe-6c5546fb1ea1"
+    },
+    {
+      "parameters": {
+        "content": "## AD Grupo Agenciauto",
+        "height": 480,
+        "width": 432,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -1168,
+        4816
+      ],
+      "typeVersion": 1,
+      "id": "ae7f32c3-bff4-4efa-8dc8-41aa17e662ac",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://tczfvxx1o9.execute-api.us-east-1.amazonaws.com/crear-usuario",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-API-Key",
+              "value": "KDuPhmnPL%d]ckF$O55(qduu?(A?<9JiXsy[+OY>BZ"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"directorio\": {{ $json.directorio }},\n  \"samAccountName\": \"{{ $json.samAccountName }}\",\n  \"givenName\": \"{{ $json.givenName }} {{ $json.nombre2 }}\",\n  \"sn\": \"{{ $json.sn }} {{ $json.apellido2 }}\",\n  \"displayName\": \"{{ $json.displayName }}\",\n  \"mail\": \"{{ $json.mail }}\",\n  \"userPrincipalName\": \"{{ $json.userPrincipalName }}\",\n  \"ouDestino\": \"{{ $json.ouDestino }}\",\n  \"title\": \"{{ $json.title }}\",\n  \"department\": \"{{ $json.department }}\",\n  \"company\": \"{{ $json.company }}\",\n  \"managerDn\": \"{{ $json.managerDn }}\",\n  \"telephoneNumber\": \"+57{{ $json.mobile }}\",\n  \"mobile\": \"346\",\n  \"office\": \"{{ $json.office }}\",\n  \"description\": \"{{ $json.description }}\",\n  \"streetAddress\": \"{{ $json.streetAddress }}\",\n  \"city\": \"{{ $json.city }}\",\n  \"state\": \"{{ $json.state }}\",\n  \"postalCode\": \"{{ $json.postalCode }}\",\n  \"country\": \"{{ $json.country }}\",\n  \"employeeHireDate\": \"{{ $json.employeeHireDate.split('T')[0] }}\",\n  \"cloudExtensionAttribute1\": \"+57{{ $json.mobile }}\", \n  \"groupDns\": {{ JSON.stringify($json.groupDns) }},\n  \"enabled\": {{ $json.enabled }}\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        160,
+        2848
+      ],
+      "id": "78cd3a00-0574-4005-ac90-1d08008c5707",
+      "name": "Crear Usuario AD",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "IU2DvCCnvkgfUvTP",
+          "name": "Unnamed credential"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "item",
+        "site": {
+          "__rl": true,
+          "value": "socia.sharepoint.com,8b2a2cab-01d3-4154-8998-dbb8e13c6679,20598b3e-4c3c-4b86-900b-0f7dbd440a72",
+          "mode": "list",
+          "cachedResultName": "Intranet Grupo"
+        },
+        "list": {
+          "__rl": true,
+          "value": "f844c523-1fe9-4ace-8dfb-0b1ee82a76e9",
+          "mode": "list",
+          "cachedResultName": "F_Altas_AdicionalesPruebas"
+        },
+        "filter": "=fields/Estado eq 'Proceso'",
+        "options": {
+          "fields": [
+            "fields"
+          ]
+        },
+        "simplify": false,
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.microsoftSharePoint",
+      "typeVersion": 1,
+      "position": [
+        -3008,
+        2144
+      ],
+      "id": "e983ca8c-8e86-48f9-9a1b-870c03e6c123",
+      "name": "Sharepoint Produccion2",
+      "credentials": {
+        "microsoftSharePointOAuth2Api": {
+          "id": "ioqEOTNJIkXYe3xe",
+          "name": "Microsoft SharePoint account 5"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {
+          "reset": false
+        }
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -2400,
+        2848
+      ],
+      "id": "28d963b8-bbd9-4c2b-ad2c-c73a8a9c73af",
+      "name": "Loop Over Items2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "4ecba95a-8995-443e-9988-8d63106aa2c7",
+              "name": "id",
+              "value": "={{ $json.fields.ID_ALTA }}",
+              "type": "number"
+            },
+            {
+              "id": "6b0b5a95-9997-4022-9e96-daa06799499e",
+              "name": "estadoAlta",
+              "value": "={{ $json.fields.Estado }}",
+              "type": "string"
+            },
+            {
+              "id": "3ee6e15c-c324-4a45-8757-c60bdcff285f",
+              "name": "nombreCompleto",
+              "value": "={{ $json.fields.NombreCompleto }}",
+              "type": "string"
+            },
+            {
+              "id": "c9f8d180-cd88-473c-9b31-24c7a39b4430",
+              "name": "cargoSolicitado",
+              "value": "={{ $json.fields.CargoSolicitado }}",
+              "type": "string"
+            },
+            {
+              "id": "03101cc9-70b1-4556-b76e-6b22a40d297c",
+              "name": "empresa",
+              "value": "={{ $json.fields.Empresa }}",
+              "type": "string"
+            },
+            {
+              "id": "69c55264-7d75-43a7-a52a-983f79ad68c7",
+              "name": "pertenece",
+              "value": "={{ $json.fields.Pertenecea }}",
+              "type": "string"
+            },
+            {
+              "id": "5646c668-ae8d-4b02-950d-24dd19ce2549",
+              "name": "jefeInmediato",
+              "value": "={{ $json.fields.JefeInmediato }}",
+              "type": "string"
+            },
+            {
+              "id": "7d4d12e0-e93c-40a2-a6ac-5853fe68a021",
+              "name": "managerSam",
+              "value": "={{ $json.fields.JefeEmail.split('@')[0].toLowerCase()}}",
+              "type": "string"
+            },
+            {
+              "id": "0ebd2ad3-5e39-4eba-bd5c-a7adbf4dace6",
+              "name": "celular",
+              "value": "={{ $json.fields.Celular }}",
+              "type": "string"
+            },
+            {
+              "id": "35139a0c-1a1b-4a9c-866f-09d7f66ab28f",
+              "name": "sede",
+              "value": "={{ $json.fields.Sede }}",
+              "type": "string"
+            },
+            {
+              "id": "e27fdaca-b4ea-4c1f-a71a-94c4329ca582",
+              "name": "=cedula",
+              "value": "={{ $json.fields.Cedula }}",
+              "type": "string"
+            },
+            {
+              "id": "ef438e72-8cb8-40ce-9ae2-fd55790d1dfb",
+              "name": "ciudad",
+              "value": "={{ $json.fields.Ciudad }}",
+              "type": "string"
+            },
+            {
+              "id": "cbcca39b-70fe-4a87-86f9-f20bfad1abad",
+              "name": "fechaNacimiento",
+              "value": "={{ $json.fields.Fechadenacimiento }}",
+              "type": "string"
+            },
+            {
+              "id": "2e8e6f41-f3f5-413d-9172-e4ac57933cf8",
+              "name": "direccionSede",
+              "value": "={{ $json.fields.Direcci_x00f3_nSede }}",
+              "type": "string"
+            },
+            {
+              "id": "2e49c72d-a152-4881-bee3-4fb68ecf9856",
+              "name": "departamento",
+              "value": "={{ $json.fields.Departamento_x002f_Ar_x00e9_a }}",
+              "type": "array"
+            },
+            {
+              "id": "6abedbbe-a607-455c-a03a-d5c51ee4ebe4",
+              "name": "estado",
+              "value": "={{ $json.fields.Estado_x002f_Departamento }}",
+              "type": "string"
+            },
+            {
+              "id": "b56ce9b2-3adc-443a-9e80-6ee7dece13e1",
+              "name": "vpn",
+              "value": "={{ $json.fields.VPN }}",
+              "type": "string"
+            },
+            {
+              "id": "340f3353-45fe-49f9-bb5f-d64837d3b8d5",
+              "name": "grupoNavegacion",
+              "value": "={{ $json.fields.GrupodeNavegaci_x00f3_n }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2800,
+        2144
+      ],
+      "id": "32f3634d-20d1-4a84-a3d0-bf7b244e20fa",
+      "name": "Normalización"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -3200,
+        2144
+      ],
+      "id": "8658d2a9-1509-4921-b2a7-a1de61d84dc3",
+      "name": "Schedule Trigger2"
+    },
+    {
+      "parameters": {
+        "content": "## Empresas",
+        "height": 896,
+        "width": 336
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -2016,
+        2480
+      ],
+      "typeVersion": 1,
+      "id": "854288e6-1607-486e-9a7c-e34137444552",
+      "name": "Sticky Note6"
+    },
+    {
+      "parameters": {
+        "content": "## API de creación ",
+        "height": 304,
+        "width": 352,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        32,
+        2752
+      ],
+      "typeVersion": 1,
+      "id": "c8c1688b-eda1-43fc-9436-358b2a9e897a",
+      "name": "Sticky Note8"
+    },
+    {
+      "parameters": {
+        "content": "## Actualizar Estados",
+        "height": 336,
+        "width": 480,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -2240,
+        2000
+      ],
+      "typeVersion": 1,
+      "id": "121b25ab-28ef-46f8-8434-5d2f3b0a165a",
+      "name": "Sticky Note9"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "A7VJdp5q9yCNFd11",
+          "mode": "list"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        -1696,
+        3472
+      ],
+      "name": "Call My Sub- FlujoPrueba",
+      "id": "28d3f5b7-19c8-4c0f-b594-e77478ad5e8b"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -2176,
+        2112
+      ],
+      "id": "3bd17e4e-5835-4186-8c7f-6245d7d58d2f",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "subject": "Usuario Creado",
+        "body": "=Usuario creado Correctamente\nRuta de dominio: {{ $('Crear Usuario AD').item.json.dn }}\nUsuario Activo: {{ $('Crear Usuario AD').item.json.samAccountName }}\nCorreo Corporativo: {{ $('Crear Usuario AD').item.json.userPrincipalName }}\nContraseña: {{ $('Crear Usuario AD').item.json.password }}\nGrupos Asignados: {{ $('Crear Usuario AD').item.json.groupsAdded }}\n.\n.\n.",
+        "fromEmail": "Notificaciones@sociabpo.com",
+        "toAddresses": [
+          "freyd.rendon@sociabpo.com",
+          "Ricardo.Tamayo@sociabpo.com",
+          "Jhonny.Montoya@sociabpo.com"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.awsSes",
+      "typeVersion": 1,
+      "position": [
+        560,
+        896
+      ],
+      "id": "d4bb1457-b7ea-4404-8a2a-6b44ff0dfefc",
+      "name": "Notificar Creacion",
+      "credentials": {
+        "aws": {
+          "id": "FRoVa5nJT7KykPcV",
+          "name": "AWS (IAM) account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "item",
+        "operation": "update",
+        "site": {
+          "__rl": true,
+          "value": "socia.sharepoint.com,8b2a2cab-01d3-4154-8998-dbb8e13c6679,20598b3e-4c3c-4b86-900b-0f7dbd440a72",
+          "mode": "list",
+          "cachedResultName": "Intranet Grupo"
+        },
+        "list": {
+          "__rl": true,
+          "value": "c26599a7-0965-485d-a57e-f912f8c9ed0e",
+          "mode": "list",
+          "cachedResultName": "F_Altas_Adicionales"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "ID_ALTA": "={{ $json.fields.ID_ALTA }}",
+            "id": "={{ $json.id }}",
+            "Estado": "Finalizado"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "Title",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Título",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "ID_ALTA",
+              "canBeUsedToMatch": true,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "ID_ALTA",
+              "readOnly": false,
+              "required": true,
+              "type": "string"
+            },
+            {
+              "id": "Pertenecea",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Pertenece a",
+              "readOnly": false,
+              "required": false,
+              "type": "options",
+              "options": [
+                {
+                  "name": "Opción 1",
+                  "value": "Opción 1"
+                }
+              ],
+              "removed": true
+            },
+            {
+              "id": "Direcci_x00f3_nSede",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Direccion Sede",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Departamento_x002f_Ar_x00e9_a",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Departamento_Area",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Estado_x002f_Departamento",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Estado_Departamento",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "VPN",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "VPN",
+              "readOnly": false,
+              "required": true,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "GrupodeNavegaci_x00f3_n",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Grupo de Navegación",
+              "readOnly": false,
+              "required": false,
+              "type": "options",
+              "options": [
+                {
+                  "name": "Gold",
+                  "value": "Gold"
+                },
+                {
+                  "name": "Silver",
+                  "value": "Silver"
+                },
+                {
+                  "name": "Bronze",
+                  "value": "Bronze"
+                }
+              ],
+              "removed": true
+            },
+            {
+              "id": "Estado",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Estado",
+              "readOnly": false,
+              "required": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "Sin Iniciar",
+                  "value": "Sin Iniciar"
+                },
+                {
+                  "name": "Proceso",
+                  "value": "Proceso"
+                },
+                {
+                  "name": "Seguimiento",
+                  "value": "Seguimiento"
+                },
+                {
+                  "name": "Finalizado",
+                  "value": "Finalizado"
+                }
+              ],
+              "removed": false
+            },
+            {
+              "id": "NombreCompleto",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Nombre Completo",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "CargoSolicitado",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Cargo Solicitado",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Empresa",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Empresa",
+              "readOnly": false,
+              "required": true,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Celular",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Celular",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Sede",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Sede",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Cedula",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Cedula",
+              "readOnly": false,
+              "required": true,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Ciudad",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Ciudad",
+              "readOnly": false,
+              "required": true,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Fechadenacimiento",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Fecha de nacimiento",
+              "readOnly": false,
+              "required": false,
+              "type": "dateTime",
+              "removed": true
+            },
+            {
+              "id": "JefeInmediato",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Jefe Inmediato",
+              "readOnly": false,
+              "required": true,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "JefeEmail",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Jefe Email",
+              "readOnly": false,
+              "required": true,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "id",
+              "canBeUsedToMatch": true,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "ID",
+              "readOnly": true,
+              "required": true,
+              "type": "string",
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.microsoftSharePoint",
+      "typeVersion": 1,
+      "position": [
+        -1952,
+        2112
+      ],
+      "id": "2019ccfa-2e3a-4fa0-bec9-7ebd0730584f",
+      "name": "Actualizar SharePoint",
+      "credentials": {
+        "microsoftSharePointOAuth2Api": {
+          "id": "ioqEOTNJIkXYe3xe",
+          "name": "Microsoft SharePoint account 5"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "4ecba95a-8995-443e-9988-8d63106aa2c7",
+              "name": "id",
+              "value": "={{ $json.fields.ID_ALTA }}",
+              "type": "number"
+            },
+            {
+              "id": "6b0b5a95-9997-4022-9e96-daa06799499e",
+              "name": "estadoAlta",
+              "value": "={{ $json.fields.Estado }}",
+              "type": "string"
+            },
+            {
+              "id": "3ee6e15c-c324-4a45-8757-c60bdcff285f",
+              "name": "nombreCompleto",
+              "value": "={{ $json.fields.NombreCompleto }}",
+              "type": "string"
+            },
+            {
+              "id": "c9f8d180-cd88-473c-9b31-24c7a39b4430",
+              "name": "cargoSolicitado",
+              "value": "={{ $json.fields.CargoSolicitado }}",
+              "type": "string"
+            },
+            {
+              "id": "03101cc9-70b1-4556-b76e-6b22a40d297c",
+              "name": "empresa",
+              "value": "={{ $json.fields.Empresa }}",
+              "type": "string"
+            },
+            {
+              "id": "69c55264-7d75-43a7-a52a-983f79ad68c7",
+              "name": "pertenece",
+              "value": "={{ $json.fields.Pertenecea }}",
+              "type": "string"
+            },
+            {
+              "id": "5646c668-ae8d-4b02-950d-24dd19ce2549",
+              "name": "jefeInmediato",
+              "value": "={{ $json.fields.JefeInmediato }}",
+              "type": "string"
+            },
+            {
+              "id": "7d4d12e0-e93c-40a2-a6ac-5853fe68a021",
+              "name": "managerSam",
+              "value": "={{ $json.fields.JefeEmail.split('@')[0].toLowerCase()}}",
+              "type": "string"
+            },
+            {
+              "id": "0ebd2ad3-5e39-4eba-bd5c-a7adbf4dace6",
+              "name": "celular",
+              "value": "={{ $json.fields.Celular }}",
+              "type": "string"
+            },
+            {
+              "id": "35139a0c-1a1b-4a9c-866f-09d7f66ab28f",
+              "name": "sede",
+              "value": "={{ $json.fields.Sede }}",
+              "type": "string"
+            },
+            {
+              "id": "e27fdaca-b4ea-4c1f-a71a-94c4329ca582",
+              "name": "=cedula",
+              "value": "={{ $json.fields.Cedula }}",
+              "type": "string"
+            },
+            {
+              "id": "ef438e72-8cb8-40ce-9ae2-fd55790d1dfb",
+              "name": "ciudad",
+              "value": "={{ $json.fields.Ciudad }}",
+              "type": "string"
+            },
+            {
+              "id": "cbcca39b-70fe-4a87-86f9-f20bfad1abad",
+              "name": "fechaNacimiento",
+              "value": "={{ $json.fields.Fechadenacimiento }}",
+              "type": "string"
+            },
+            {
+              "id": "2e8e6f41-f3f5-413d-9172-e4ac57933cf8",
+              "name": "direccionSede",
+              "value": "={{ $json.fields.Direcci_x00f3_nSede }}",
+              "type": "string"
+            },
+            {
+              "id": "2e49c72d-a152-4881-bee3-4fb68ecf9856",
+              "name": "departamento",
+              "value": "={{ $json.fields.Departamento_x002f_Ar_x00e9_a }}",
+              "type": "array"
+            },
+            {
+              "id": "6abedbbe-a607-455c-a03a-d5c51ee4ebe4",
+              "name": "estado",
+              "value": "={{ $json.fields.Estado_x002f_Departamento }}",
+              "type": "string"
+            },
+            {
+              "id": "b56ce9b2-3adc-443a-9e80-6ee7dece13e1",
+              "name": "vpn",
+              "value": "={{ $json.fields.VPN }}",
+              "type": "string"
+            },
+            {
+              "id": "340f3353-45fe-49f9-bb5f-d64837d3b8d5",
+              "name": "grupoNavegacion",
+              "value": "={{ $json.fields.GrupodeNavegaci_x00f3_n }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2768,
+        2848
+      ],
+      "id": "b137f8df-79ae-47d5-9488-d967fc858570",
+      "name": "Normalización1"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Resolver Directorio (Empresa)": {
+      "main": [
+        [
+          {
+            "node": "Call Socia",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call Sub-voce",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call Sub-PuntoAliadoCredito",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call Sub-PuntoAliadoSeguros",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call Sub-agenciauto",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call Sub-Automotora",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call Sub-megauto",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call Sub-otobai motor",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call My Sub-Autoamerica",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call My Sub-Automax",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call My Sub-Hino",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call My Sub-Trafalgar",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call My Sub-grupo agenciauto",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Call My Sub- FlujoPrueba",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sharepoint Produccion": {
+      "main": [
+        [
+          {
+            "node": "Normalización1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Sharepoint Produccion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Socia": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Sub-voce": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Sub-PuntoAliadoCredito": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Sub-PuntoAliadoSeguros": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Sub-agenciauto": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Sub-Automotora": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Sub-megauto": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Sub-otobai motor": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call My Sub-Autoamerica": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call My Sub-Automax": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call My Sub-Hino": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call My Sub-Trafalgar": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call My Sub-grupo agenciauto": {
+      "main": [
+        [
+          {
+            "node": "Crear Usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Crear Usuario AD": {
+      "main": [
+        [
+          {
+            "node": "Notificar Creacion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sharepoint Produccion2": {
+      "main": [
+        [
+          {
+            "node": "Normalización",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items2": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ],
+        [
+          {
+            "node": "Resolver Directorio (Empresa)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger2": {
+      "main": [
+        [
+          {
+            "node": "Sharepoint Produccion2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalización": {
+      "main": [
+        []
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Actualizar SharePoint",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notificar Creacion": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Actualizar SharePoint": {
+      "main": [
+        []
+      ]
+    },
+    "Normalización1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "timeSavedMode": "fixed",
+    "timezone": "America/Bogota",
+    "callerPolicy": "workflowsFromSameOwner",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "77904ab2-7e5f-4a6e-860e-4f41ed354140",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1cc18228b98a2342abfb569134beab1251c2dd05fbddc1b19981e658d8a5196a"
+  },
+  "id": "6Py9vooXmKqCnUe4",
+  "tags": []
+}

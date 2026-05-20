@@ -1,0 +1,2046 @@
+{
+  "name": "Sub-Socia",
+  "nodes": [
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5ffe3983-97c6-47b2-bbe8-bab5d6e1b1a2",
+              "name": "ad.ous.ruta",
+              "value": "OU=_Users,OU=Administracion,OU=SociaBPO,OU=Holding,DC=sociabpo,DC=sc",
+              "type": "string"
+            },
+            {
+              "id": "33c794c2-4b68-4e4b-89dc-bb7b6ae3aea0",
+              "name": "ad.ous.manager",
+              "value": "={{ $json.usuario.DN }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1520,
+        -5872
+      ],
+      "id": "36744d50-0b2f-41e2-925e-cb2602572ae6",
+      "name": "Asignar OU Administracion"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5ffe3983-97c6-47b2-bbe8-bab5d6e1b1a2",
+              "name": "ad.ous.ruta",
+              "value": "OU=_Users,OU=Servicios,OU=SociaBPO,OU=Holding,DC=sociabpo,DC=sc",
+              "type": "string"
+            },
+            {
+              "id": "33c794c2-4b68-4e4b-89dc-bb7b6ae3aea0",
+              "name": "ad.ous.manager",
+              "value": "={{ $json.usuario.DN }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1504,
+        -6144
+      ],
+      "id": "a00e6777-ea7c-4236-8414-84a37ee93f36",
+      "name": "Asignar OU Servicio"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a3ff300c-67ad-439e-9612-a331b16bc0d9",
+              "name": "ad.directorioId",
+              "value": 1,
+              "type": "number"
+            },
+            {
+              "id": "e3c115b5-3ee7-4fda-9d55-a92def9c069d",
+              "name": "ad.dominio",
+              "value": "sociabpo.com",
+              "type": "string"
+            },
+            {
+              "id": "5399ef29-c7f4-4a31-b1e1-0180923536b4",
+              "name": "ad.baseDN",
+              "value": "DC=sociabpo,DC=sc",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        160,
+        -6368
+      ],
+      "id": "31f1f876-8e2d-438d-ac67-cc08d0f86594",
+      "name": "AD base (sociabpo.sc)"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "04c12245-ae1f-4210-b095-658365cc7a02",
+              "name": "cargoKey",
+              "value": "={{ ($json.cargoSolicitado ?? '').toString().trim().toLowerCase() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        752,
+        -6144
+      ],
+      "id": "4d8c70de-b773-4986-9c0d-2ac58f79e267",
+      "name": "Normalizar cargo"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5ffe3983-97c6-47b2-bbe8-bab5d6e1b1a2",
+              "name": "ad.ous.ruta",
+              "value": "OU=_Users,OU=Contraloria,OU=SociaBPO,OU=Holding,DC=sociabpo,DC=sc",
+              "type": "string"
+            },
+            {
+              "id": "33c794c2-4b68-4e4b-89dc-bb7b6ae3aea0",
+              "name": "ad.ous.manager",
+              "value": "={{ $json.usuario.DN }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1504,
+        -6432
+      ],
+      "id": "c4745168-0f73-40ff-a657-0c2e4c30bcd6",
+      "name": "Asignar OU Contraloria"
+    },
+    {
+      "parameters": {
+        "content": "Socia y ous",
+        "height": 80,
+        "width": 150,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        352,
+        -6480
+      ],
+      "typeVersion": 1,
+      "id": "0ff6fd85-aac5-4c6a-9611-72caed72ac39",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5ffe3983-97c6-47b2-bbe8-bab5d6e1b1a2",
+              "name": "ad.ous.ruta",
+              "value": "OU=_User,OU=Tecnologia,OU=SociaBPO,OU=Holding,DC=sociabpo,DC=sc",
+              "type": "string"
+            },
+            {
+              "id": "33c794c2-4b68-4e4b-89dc-bb7b6ae3aea0",
+              "name": "ad.ous.manager",
+              "value": "={{ $json.usuario.DN }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1504,
+        -6704
+      ],
+      "id": "363de99c-c606-4f7b-ab4b-1497501bd5d0",
+      "name": "Asignar OU Tecnología"
+    },
+    {
+      "parameters": {
+        "jsCode": "const mergedData = {};\n\nfor (const item of items) {\n  Object.assign(mergedData, item.json);\n}\n\nreturn [{ json: mergedData }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4240,
+        -6960
+      ],
+      "id": "7c62c865-f16e-4148-b0c2-9b3003d68137",
+      "name": "Entregar Datos"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ec7c556c-6782-4e26-ada8-b45e6c5fabf6",
+              "name": "=ad.ous.ruta",
+              "value": "OU=_Users,OU=Contac,OU=SociaBPO,OU=Holding,DC=sociabpo,DC=sc",
+              "type": "string"
+            },
+            {
+              "id": "42d52379-b524-4bd4-a3d1-4333f9ea824b",
+              "name": "ad.ous.manager",
+              "value": "={{ $json.usuario.DN }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1488,
+        -7440
+      ],
+      "id": "f23af642-da86-406d-ab31-2167f33b17c8",
+      "name": "Asignar OU Contac"
+    },
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "id": "39199554-a632-40a8-b1ab-4b4a6dbb1945",
+      "typeVersion": 1.1,
+      "name": "Start",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "position": [
+        -48,
+        -6368
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "function normalizeText(s) {\n  return String(s ?? \"\")\n    .trim()\n    .normalize(\"NFD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .toLowerCase()\n    .replace(/[^\\p{L}\\p{N}\\s]/gu, \" \")\n    .replace(/\\s+/g, \" \")\n    .trim();\n}\n\nfunction onlyAZ09(s) {\n  return String(s ?? \"\").replace(/[^a-z0-9]/g, \"\");\n}\n\nconst fullRaw = $json.nombreCompleto ?? \"\";\nconst full = normalizeText(fullRaw);\nconst parts = full ? full.split(\" \").filter(Boolean) : [];\n\nlet nombre1 = \"\";\nlet nombre2 = \"\";\nlet apellido1 = \"\";\nlet apellido2 = \"\";\n\nif (parts.length >= 4) {\n  nombre1 = parts[0];\n  nombre2 = parts[1];\n  apellido1 = parts[parts.length - 2];\n  apellido2 = parts[parts.length - 1];\n} \nelse if (parts.length === 3) {\n  nombre1 = parts[0];\n  apellido1 = parts[1];\n  apellido2 = parts[2];\n} \nelse if (parts.length === 2) {\n  nombre1 = parts[0];\n  apellido1 = parts[1];\n} \nelse if (parts.length === 1) {\n  nombre1 = parts[0];\n}\n\nconst nombreClean = onlyAZ09(nombre1);\nconst apellido1Clean = onlyAZ09(apellido1);\nconst apellido2Clean = onlyAZ09(apellido2);\n\nconst intento = 0;\n\nlet samCandidate = [nombreClean, apellido1Clean].filter(Boolean).join(\".\");\nif (!samCandidate) samCandidate = \"usuario\";\n\nconst domain = \"livecenter.com.co\";\nconst upn = `${samCandidate}@${domain}`;\n\nreturn {\n  ...$json,\n  nombre1,\n  nombre2,\n  apellido1,\n  apellido2: apellido2Clean,\n  intento,\n  samBase: samCandidate,\n  samCandidate,\n  upn,\n  email: upn\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1712,
+        -7440
+      ],
+      "id": "ac802055-d7bf-45fc-b9ec-e1285456d078",
+      "name": "Generar username1"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "6a37f3f0-043a-452d-a15b-0debc517a28a",
+              "leftValue": "={{ $json.usuario}}",
+              "rightValue": 500,
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        2160,
+        -7440
+      ],
+      "id": "9938e714-93f5-49f0-a677-8f32eca070af",
+      "name": "¿Usuario existe?1"
+    },
+    {
+      "parameters": {
+        "jsCode": "const original = $node[\"Generar username1\"].json;\n\nlet actual = {};\ntry {\n  actual = $node[\"Incrementar Intento1\"].json;\n} catch (e) {\n  actual = original;\n}\n\nconst usuarioNoExiste = $node[\"Consultar usuario AD\"].json.error?.status === 500;\n\nconst resultadoFinal = {\n  ...original,\n  ...actual,\n  samCandidate: actual.samCandidate || original.samCandidate,\n  upn: actual.upn || original.upn\n};\n\nreturn [{ json: resultadoFinal }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2448,
+        -7424
+      ],
+      "id": "6e61a8d3-4563-4e94-b73d-d02ac930162a",
+      "name": "Usuario creado1"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "b97ab0f2-686a-4a7e-a6b0-0d8c17e77a2e",
+              "leftValue": "={{ $('Generar username1').item.json.cedula }}",
+              "rightValue": "={{$json.usuario?.Cedula}}",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        2304,
+        -7952
+      ],
+      "id": "a55bd278-958b-42ba-aa30-cdd784b86a1e",
+      "name": "¿Es la misma cédula?1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// 1. Buscamos el último intento exitoso que realizó este mismo nodo\nlet intentoActual = 0;\ntry {\n    // Intentamos obtener el valor de la última vez que pasó por aquí\n    intentoActual = $(\"Incrementar Intento1\").last().json.intento || 0;\n} catch (e) {\n    intentoActual = 0;\n}\n\nconst intento = intentoActual + 1;\n\n// 2. Traemos los datos base del nodo donde se genera todo el flujo\n// Cambia \"Generar username1\" por el nombre real de tu nodo inicial si es distinto\nconst origen = $(\"Generar username1\").item.json;\n\nconst apellido2 = (origen.apellido2 || \"\").trim().toLowerCase();\nconst samBase = (origen.samBase || \"\").trim().toLowerCase();\nconst directorioId = (origen.ad ? origen.ad.directorioId : null) || origen.directorioId;\n\nlet extra = \"\";\n\n// 3. Lógica de homónimos corregida\nif (apellido2 && intento <= apellido2.length) {\n    extra = apellido2.substring(0, intento);\n} else {\n    // Si ya probamos todas las letras, empezamos a poner números\n    extra = apellido2 + (intento - apellido2.length);\n}\n\nconst nuevoUsername = samBase + extra;\n\nreturn [{\n    json: {\n        intento: intento,\n        samBase: samBase,\n        apellido2: apellido2,\n        directorioId: directorioId,\n        samCandidate: nuevoUsername,\n        upn: nuevoUsername + \"@livecenter.com.co\",\n        email: nuevoUsername + \"@livecenter.com.co\"\n    }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2544,
+        -7824
+      ],
+      "id": "b86baa66-90d0-48f8-981e-17bdbbe24c72",
+      "name": "Incrementar Intento1"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "function normalizeText(s) {\n  return String(s ?? \"\")\n    .trim()\n    .normalize(\"NFD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .toLowerCase()\n    .replace(/[^\\p{L}\\p{N}\\s]/gu, \" \")\n    .replace(/\\s+/g, \" \")\n    .trim();\n}\n\nfunction onlyAZ09(s) {\n  return String(s ?? \"\").replace(/[^a-z0-9]/g, \"\");\n}\n\nconst fullRaw = $json.nombreCompleto ?? \"\";\nconst full = normalizeText(fullRaw);\nconst parts = full ? full.split(\" \").filter(Boolean) : [];\n\nlet nombre1 = \"\";\nlet nombre2 = \"\";\nlet apellido1 = \"\";\nlet apellido2 = \"\";\n\nif (parts.length >= 4) {\n  nombre1 = parts[0];\n  nombre2 = parts[1];\n  apellido1 = parts[parts.length - 2];\n  apellido2 = parts[parts.length - 1];\n} \nelse if (parts.length === 3) {\n  nombre1 = parts[0];\n  apellido1 = parts[1];\n  apellido2 = parts[2];\n} \nelse if (parts.length === 2) {\n  nombre1 = parts[0];\n  apellido1 = parts[1];\n} \nelse if (parts.length === 1) {\n  nombre1 = parts[0];\n}\n\nconst nombreClean = onlyAZ09(nombre1);\nconst apellido1Clean = onlyAZ09(apellido1);\nconst apellido2Clean = onlyAZ09(apellido2);\n\nconst intento = 0;\n\nlet samCandidate = [nombreClean, apellido1Clean].filter(Boolean).join(\".\");\nif (!samCandidate) samCandidate = \"usuario\";\n\nconst domain = \"sociabpo.com\";\nconst upn = `${samCandidate}@${domain}`;\n\nreturn {\n  ...$json,\n  nombre1,\n  nombre2,\n  apellido1,\n  apellido2: apellido2Clean,\n  intento,\n  samBase: samCandidate,\n  samCandidate,\n  upn,\n  email: upn\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2064,
+        -6160
+      ],
+      "id": "5b11f72d-9b72-4929-9383-7c5e8664c65f",
+      "name": "Generar username2"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "6a37f3f0-043a-452d-a15b-0debc517a28a",
+              "leftValue": "={{ $json.usuario}}",
+              "rightValue": 500,
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        2512,
+        -6160
+      ],
+      "id": "b27c75bd-a14e-4368-8dd1-ee2dda7e33f4",
+      "name": "¿Usuario existe?2"
+    },
+    {
+      "parameters": {
+        "jsCode": "const original = $node[\"Generar username2\"].json;\n\nlet actual = {};\ntry {\n  actual = $node[\"Incrementar Intento2\"].json;\n} catch (e) {\n  actual = original;\n}\n\nconst usuarioNoExiste = $node[\"Consultar usuario AD1\"].json.error?.status === 500;\n\nconst resultadoFinal = {\n  ...original,\n  ...actual,\n  samCandidate: actual.samCandidate || original.samCandidate,\n  upn: actual.upn || original.upn\n};\n\nreturn [{ json: resultadoFinal }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2800,
+        -6144
+      ],
+      "id": "5b34362d-d400-4d1e-a448-561d488acef8",
+      "name": "Usuario creado2"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "b97ab0f2-686a-4a7e-a6b0-0d8c17e77a2e",
+              "leftValue": "={{ $('Generar username2').item.json.cedula }}",
+              "rightValue": "={{$json.usuario?.Cedula}}",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        2656,
+        -6672
+      ],
+      "id": "e0a65c83-4c8b-41a2-933f-9835dbafee34",
+      "name": "¿Es la misma cédula?2"
+    },
+    {
+      "parameters": {
+        "jsCode": "// 1. Buscamos el último intento exitoso que realizó este mismo nodo\nlet intentoActual = 0;\ntry {\n    // Intentamos obtener el valor de la última vez que pasó por aquí\n    intentoActual = $(\"Incrementar Intento2\").last().json.intento || 0;\n} catch (e) {\n    intentoActual = 0;\n}\n\nconst intento = intentoActual + 1;\n\n// 2. Traemos los datos base del nodo donde se genera todo el flujo\n// Cambia \"Generar username1\" por el nombre real de tu nodo inicial si es distinto\nconst origen = $(\"Generar username2\").item.json;\n\nconst apellido2 = (origen.apellido2 || \"\").trim().toLowerCase();\nconst samBase = (origen.samBase || \"\").trim().toLowerCase();\nconst directorioId = (origen.ad ? origen.ad.directorioId : null) || origen.directorioId;\n\nlet extra = \"\";\n\n// 3. Lógica de homónimos corregida\nif (apellido2 && intento <= apellido2.length) {\n    extra = apellido2.substring(0, intento);\n} else {\n    // Si ya probamos todas las letras, empezamos a poner números\n    extra = apellido2 + (intento - apellido2.length);\n}\n\nconst nuevoUsername = samBase + extra;\n\nreturn [{\n    json: {\n        intento: intento,\n        samBase: samBase,\n        apellido2: apellido2,\n        directorioId: directorioId,\n        samCandidate: nuevoUsername,\n        upn: nuevoUsername + \"@sociabpo.com\",\n        email: nuevoUsername + \"@sociabpo.com\"\n    }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2896,
+        -6544
+      ],
+      "id": "b17a13b7-58f7-4f7d-ace0-0bed6ceed930",
+      "name": "Incrementar Intento2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "af6fc62a-ea31-4f92-80f5-915c1a5c33bc",
+              "name": "Groupvpn",
+              "value": "CN=G VPN,OU=_Groups,OU=Holding,DC=sociabpo,DC=sc",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        3696,
+        -7440
+      ],
+      "id": "37b2568d-5f05-4a68-b708-9c3be5d938de",
+      "name": "GruopVPN2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "329837dc-b0e7-4c94-8f07-dd3a3e2fe51e",
+              "name": "Groupsilver",
+              "value": "CN=G SILVER UTM,OU=_Groups,OU=Holding,DC=sociabpo,DC=sc",
+              "type": "string"
+            },
+            {
+              "id": "ff77132e-ac93-41a8-afc2-54fb444f5e47",
+              "name": "Groupread_intranet",
+              "value": "CN=G Read_Intranet,OU=_Groups,OU=Holding,DC=sociabpo,DC=sc",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        3712,
+        -6944
+      ],
+      "id": "a9db288f-29ea-4f4f-a1d3-1f5a51666e01",
+      "name": "GroupSILVER2"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "bb021391-73ac-498f-bf8c-680d14046b57",
+              "leftValue": "={{ $json.vpn.trim() }}",
+              "rightValue": "Sí",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        3456,
+        -7424
+      ],
+      "id": "8b77714b-6e48-4660-a741-ff4c73e233f9",
+      "name": "VPN2"
+    },
+    {
+      "parameters": {
+        "numberInputs": 4
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        4032,
+        -6992
+      ],
+      "id": "7aad0cda-9af0-40d4-851b-2f7bda6eeaf1",
+      "name": "Merge2"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.grupoNavegacion }}",
+                    "rightValue": "Bronze",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "a718e33d-4ea2-48df-bc6e-f2825a9a8086"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Bronze"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "d812edfb-2522-482b-b4cd-d94c73de728d",
+                    "leftValue": "={{ $json.grupoNavegacion }}",
+                    "rightValue": "Silver",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Silver"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "a32c7bf1-aadb-4a81-bdb3-acec111d148a",
+                    "leftValue": "={{ $json.grupoNavegacion }}",
+                    "rightValue": "Gold",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Gold"
+            }
+          ]
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        3376,
+        -6960
+      ],
+      "id": "65e73e3d-f589-4ff2-aa8f-49756bbc733a",
+      "name": "Switch1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d79f532f-b0c3-4ccf-b760-7c2e754a854d",
+              "name": "Groupbronze",
+              "value": "CN=G BRONZE UTM,OU=_Groups,OU=Holding,DC=sociabpo,DC=sc",
+              "type": "string"
+            },
+            {
+              "id": "86cdb7d0-8b0f-4391-9cce-424120f50636",
+              "name": "Groupread_intranet",
+              "value": "CN=G Read_Intranet,OU=_Groups,OU=Holding,DC=sociabpo,DC=sc",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        3712,
+        -7104
+      ],
+      "id": "163b7818-9875-4ff1-a883-34ff804c09ea",
+      "name": "GroupBronze"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "329837dc-b0e7-4c94-8f07-dd3a3e2fe51e",
+              "name": "Groupgold",
+              "value": "CN=G GOLD UTM,OU=_Groups,OU=Holding,DC=sociabpo,DC=sc",
+              "type": "string"
+            },
+            {
+              "id": "945d6526-b661-4378-bed0-9b4fd60eed31",
+              "name": "Groupread_intranet",
+              "value": "CN=G Read_Intranet,OU=_Groups,OU=Holding,DC=sociabpo,DC=sc",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        3712,
+        -6768
+      ],
+      "id": "1dc7a93c-9b06-4643-b919-cae46aba9872",
+      "name": "GroupGOLD"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "1ab60733-9b1c-48a4-beb5-cd39c56961e9",
+              "name": "directorio",
+              "value": "={{ $json.ad.directorioId }}",
+              "type": "string"
+            },
+            {
+              "id": "eddae66b-a912-43c0-b334-c1963d6ae762",
+              "name": "samAccountName",
+              "value": "={{ $json.samCandidate }}",
+              "type": "string"
+            },
+            {
+              "id": "f8453e48-16f9-45bf-91e1-cf0a49606990",
+              "name": "givenName",
+              "value": "={{ $json.nombre1 }}",
+              "type": "string"
+            },
+            {
+              "id": "47d301e0-f4e1-4a51-ac4b-5b68afe3da10",
+              "name": "sn",
+              "value": "={{ $json.apellido1 }}",
+              "type": "string"
+            },
+            {
+              "id": "97d18d3f-d8c5-4f05-9fe6-0c9e7dc0cdca",
+              "name": "displayName",
+              "value": "={{ $json.nombreCompleto }}",
+              "type": "string"
+            },
+            {
+              "id": "97381d6e-4d66-4972-9876-6550a5d074f8",
+              "name": "mail",
+              "value": "={{ $json.upn }}",
+              "type": "string"
+            },
+            {
+              "id": "9d9de10c-984f-4d16-bd41-a018a9831936",
+              "name": "userPrincipalName",
+              "value": "={{ $json.upn }}",
+              "type": "string"
+            },
+            {
+              "id": "15f4054a-c66d-47ab-a9ba-3466dfc2ab03",
+              "name": "ouDestino",
+              "value": "={{ $json.ad.ous.ruta }}",
+              "type": "string"
+            },
+            {
+              "id": "3365c690-41c6-4962-9b36-61ceb453b0ce",
+              "name": "title",
+              "value": "={{ $json.cargoKey }}",
+              "type": "string"
+            },
+            {
+              "id": "3fa3a6d6-3d31-4257-b9d4-b63738dfd2d6",
+              "name": "department",
+              "value": "={{ $json.departamento }}",
+              "type": "string"
+            },
+            {
+              "id": "b07e4ec3-d64f-4330-b629-de31cd4a713d",
+              "name": "company",
+              "value": "={{ $json.empresa }}",
+              "type": "string"
+            },
+            {
+              "id": "f8d16c02-adfa-479c-9b55-810282c8f809",
+              "name": "managerDn",
+              "value": "={{ $json.ad.ous.manager }}",
+              "type": "string"
+            },
+            {
+              "id": "0160fd13-18bd-4a50-ae97-b8bd0df181d7",
+              "name": "telephoneNumber",
+              "value": "7014",
+              "type": "string"
+            },
+            {
+              "id": "7a58b0ae-d4c2-44ba-8af9-1f8c70ac12e0",
+              "name": "mobile",
+              "value": "={{ $json.celular }}",
+              "type": "string"
+            },
+            {
+              "id": "8f3e7eec-22b6-430c-966d-e1a555241bc1",
+              "name": "office",
+              "value": "={{ $json.sede }}",
+              "type": "string"
+            },
+            {
+              "id": "8960d6c3-a5cf-4673-9a8e-a0321b023f2c",
+              "name": "description",
+              "value": "={{ $json.cedula }}",
+              "type": "string"
+            },
+            {
+              "id": "9a02ee59-82af-4b1f-b1ed-03f2d16d450d",
+              "name": "streetAddress",
+              "value": "={{ $json.direccionSede }}",
+              "type": "string"
+            },
+            {
+              "id": "bdc4e347-7592-4db3-9902-4ece6a66d878",
+              "name": "city",
+              "value": "={{ $json.ciudad }}",
+              "type": "string"
+            },
+            {
+              "id": "749f8246-1d6f-4454-af12-725ec8e19421",
+              "name": "state",
+              "value": "={{ $json.estado }}",
+              "type": "string"
+            },
+            {
+              "id": "90cdd047-7db0-4535-83a6-cad7a8ecf8f9",
+              "name": "postalCode",
+              "value": "050015",
+              "type": "string"
+            },
+            {
+              "id": "4b768758-2a2b-4ab5-a61d-ceb79002b2e4",
+              "name": "country",
+              "value": "CO",
+              "type": "string"
+            },
+            {
+              "id": "254e5622-8e79-4738-892c-487c28b7f760",
+              "name": "employeeHireDate",
+              "value": "={{ $json.fechaNacimiento }}",
+              "type": "string"
+            },
+            {
+              "id": "8de59df0-880f-4579-b08d-c80b427ccdd3",
+              "name": "cloudExtensionAttribute1",
+              "value": "={{ $json.celular }}",
+              "type": "string"
+            },
+            {
+              "id": "92cf5f7e-29b5-4240-8d8d-c767a1ba462a",
+              "name": "groupDns",
+              "value": "={{ \n[\n  $json.Groupvpn,\n  $json.Groupsilver,\n  $json.Groupbronze,\n  $json.Groupgold,\n  $json.Groupread_intranet\n].filter(g => g)\n}}",
+              "type": "array"
+            },
+            {
+              "id": "66e5a1cb-4c8a-440e-b584-1ee64d0856cf",
+              "name": "password",
+              "value": "",
+              "type": "string"
+            },
+            {
+              "id": "06c04c9f-f993-496a-a691-b86873cb1dc6",
+              "name": "enabled",
+              "value": true,
+              "type": "boolean"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        4432,
+        -6960
+      ],
+      "id": "a1b938cf-0f0b-4eec-9c1a-4841f791211a",
+      "name": "Guardar usuarioDirectorio1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://tczfvxx1o9.execute-api.us-east-1.amazonaws.com/consultar-usuario",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-API-Key",
+              "value": "KDuPhmnPL%d]ckF$O55(qduu?(A?<9JiXsy[+OY>BZ"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"usuario\": \"{{$json.samCandidate}}\",\n    \"directorio\": {{ $json.directorioId || $json.ad?.directorioId }}\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1936,
+        -7440
+      ],
+      "id": "00b32f46-91ed-4a4e-b95d-af6abb865a35",
+      "name": "Consultar usuario AD",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "IU2DvCCnvkgfUvTP",
+          "name": "Unnamed credential"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://tczfvxx1o9.execute-api.us-east-1.amazonaws.com/consultar-usuario",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-API-Key",
+              "value": "KDuPhmnPL%d]ckF$O55(qduu?(A?<9JiXsy[+OY>BZ"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"usuario\": \"{{$json.samCandidate}}\",\n    \"directorio\": {{ $json.directorioId || $json.ad?.directorioId }}\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2288,
+        -6160
+      ],
+      "id": "bb74a09b-025b-49a0-ac17-6cb730b311ff",
+      "name": "Consultar usuario AD1",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "IU2DvCCnvkgfUvTP",
+          "name": "Unnamed credential"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Start').item.json.pertenece }}",
+                    "rightValue": "=Contac",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "de418610-754f-49c6-b7a0-eb2f28a15dae"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Contac"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "1a1439b5-b5ed-4629-a740-ec6dc0fb7e3e",
+                    "leftValue": "={{ $('Start').item.json.pertenece }}",
+                    "rightValue": "=Tecnologia",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Tecnologia"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "18362f52-f9ba-4bd5-94b5-89340996558d",
+                    "leftValue": "={{ $('Start').item.json.pertenece }}",
+                    "rightValue": "=Contraloria",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Contraloria"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "49db3e4d-4073-4c6a-892e-e054c98d09ab",
+                    "leftValue": "={{ $('Start').item.json.pertenece }}",
+                    "rightValue": "=Servicios",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Servicios"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "c206e06b-b68a-45dd-9837-4db2369aec39",
+                    "leftValue": "={{ $('Start').item.json.pertenece }}",
+                    "rightValue": "=Administracion",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Administracion"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "23160ef5-a04f-4b4d-92ed-e39451006ea6",
+                    "leftValue": "={{ $('Start').item.json.pertenece }}",
+                    "rightValue": "=Direccion",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Direccion"
+            }
+          ]
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        928,
+        -6208
+      ],
+      "id": "f22115e1-ff58-4c21-9c55-4a7b8b3393bb",
+      "name": "Pertenece a"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5ffe3983-97c6-47b2-bbe8-bab5d6e1b1a2",
+              "name": "ad.ous.ruta",
+              "value": "OU=_User,OU=Direccion,OU=SociaBPO,OU=Holding,DC=sociabpo,DC=sc  ",
+              "type": "string"
+            },
+            {
+              "id": "33c794c2-4b68-4e4b-89dc-bb7b6ae3aea0",
+              "name": "ad.ous.manager",
+              "value": "={{ $json.usuario.DN }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1520,
+        -5632
+      ],
+      "id": "6b3ead75-9d88-44b7-b51d-d8f45f92f235",
+      "name": "Asignar OU Dirrecion"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://tczfvxx1o9.execute-api.us-east-1.amazonaws.com/consultar-usuario",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-API-Key",
+              "value": "KDuPhmnPL%d]ckF$O55(qduu?(A?<9JiXsy[+OY>BZ"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"usuario\": \"{{ $json.managerSam }}\",\n    \"directorio\": {{ $json.directorioId || $json.ad?.directorioId }}\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        352,
+        -6368
+      ],
+      "id": "626804af-efe7-4c3c-8067-06bf11b05680",
+      "name": "ConsultarJefe AD",
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "IU2DvCCnvkgfUvTP",
+          "name": "Unnamed credential"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        528,
+        -6144
+      ],
+      "id": "c739fb50-4453-4d90-877d-41630a94c8cb",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "subject": "Usuario ya Existe",
+        "body": "=No se puede crear usuario\nYa existe:\n{{ $json.usuario.Nombre }}\n{{ $json.usuario.Correo }}\n{{ $json.usuario.Jefe }}\n{{ $json.usuario['Numero de celular'] }}\n{{ $json.usuario.Departamento }}\n{{ $json.usuario.Cargo }}\n{{ $json.usuario.Cedula }}\n{{ $json.usuario.Oficina }}\n{{ $json.usuario.DN }}\n.\n.\n.",
+        "fromEmail": "Notificaciones@sociabpo.com",
+        "toAddresses": [
+          "freyd.rendon@sociabpo.com",
+          "Ricardo.Tamayo@sociabpo.com",
+          "Jhonny.Montoya@sociabpo.com"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.awsSes",
+      "typeVersion": 1,
+      "position": [
+        2896,
+        -6800
+      ],
+      "id": "2f298160-2233-4b1b-a5e6-341932d8fa11",
+      "name": "Notificar Existencia1",
+      "credentials": {
+        "aws": {
+          "id": "FRoVa5nJT7KykPcV",
+          "name": "AWS (IAM) account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "subject": "Usuario ya Existe",
+        "body": "=No se puede crear usuario\nYa existe:\n{{ $json.usuario.Nombre }}\n{{ $json.usuario.Correo }}\n{{ $json.usuario.Jefe }}\n{{ $json.usuario['Numero de celular'] }}\n{{ $json.usuario.Departamento }}\n{{ $json.usuario.Cargo }}\n{{ $json.usuario.Cedula }}\n{{ $json.usuario.Oficina }}\n{{ $json.usuario.DN }}\n.\n.\n.",
+        "fromEmail": "Notificaciones@sociabpo.com",
+        "toAddresses": [
+          "freyd.rendon@sociabpo.com",
+          "Ricardo.Tamayo@sociabpo.com",
+          "Jhonny.Montoya@sociabpo.com"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.awsSes",
+      "typeVersion": 1,
+      "position": [
+        2544,
+        -8064
+      ],
+      "id": "7bf9dc74-e14c-43c0-a35a-0c8763b574e3",
+      "name": "Notificar Existencia",
+      "credentials": {
+        "aws": {
+          "id": "FRoVa5nJT7KykPcV",
+          "name": "AWS (IAM) account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "item",
+        "operation": "update",
+        "site": {
+          "__rl": true,
+          "value": "socia.sharepoint.com,8b2a2cab-01d3-4154-8998-dbb8e13c6679,20598b3e-4c3c-4b86-900b-0f7dbd440a72",
+          "mode": "list",
+          "cachedResultName": "Intranet Grupo"
+        },
+        "list": {
+          "__rl": true,
+          "value": "c26599a7-0965-485d-a57e-f912f8c9ed0e",
+          "mode": "list",
+          "cachedResultName": "F_Altas_Adicionales"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "ID_ALTA": "={{ $json.fields.ID_ALTA }}",
+            "id": "={{ $json.id }}",
+            "Estado": "Seguimiento"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "Title",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Título",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "ID_ALTA",
+              "canBeUsedToMatch": true,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "ID_ALTA",
+              "readOnly": false,
+              "required": true,
+              "type": "string"
+            },
+            {
+              "id": "Pertenecea",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Pertenece a",
+              "readOnly": false,
+              "required": false,
+              "type": "options",
+              "options": [
+                {
+                  "name": "Opción 1",
+                  "value": "Opción 1"
+                }
+              ],
+              "removed": true
+            },
+            {
+              "id": "Direcci_x00f3_nSede",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Direccion Sede",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Departamento_x002f_Ar_x00e9_a",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Departamento_Area",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Estado_x002f_Departamento",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Estado_Departamento",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "VPN",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "VPN",
+              "readOnly": false,
+              "required": true,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "GrupodeNavegaci_x00f3_n",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Grupo de Navegación",
+              "readOnly": false,
+              "required": false,
+              "type": "options",
+              "options": [
+                {
+                  "name": "Gold",
+                  "value": "Gold"
+                },
+                {
+                  "name": "Silver",
+                  "value": "Silver"
+                },
+                {
+                  "name": "Bronze",
+                  "value": "Bronze"
+                }
+              ],
+              "removed": true
+            },
+            {
+              "id": "Estado",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Estado",
+              "readOnly": false,
+              "required": true,
+              "type": "options",
+              "options": [
+                {
+                  "name": "Sin Iniciar",
+                  "value": "Sin Iniciar"
+                },
+                {
+                  "name": "Proceso",
+                  "value": "Proceso"
+                },
+                {
+                  "name": "Seguimiento",
+                  "value": "Seguimiento"
+                },
+                {
+                  "name": "Finalizado",
+                  "value": "Finalizado"
+                }
+              ],
+              "removed": false
+            },
+            {
+              "id": "NombreCompleto",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Nombre Completo",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "CargoSolicitado",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Cargo Solicitado",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Empresa",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Empresa",
+              "readOnly": false,
+              "required": true,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Celular",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Celular",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Sede",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Sede",
+              "readOnly": false,
+              "required": false,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Cedula",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Cedula",
+              "readOnly": false,
+              "required": true,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Ciudad",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Ciudad",
+              "readOnly": false,
+              "required": true,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "Fechadenacimiento",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Fecha de nacimiento",
+              "readOnly": false,
+              "required": false,
+              "type": "dateTime",
+              "removed": true
+            },
+            {
+              "id": "JefeInmediato",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Jefe Inmediato",
+              "readOnly": false,
+              "required": true,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "JefeEmail",
+              "canBeUsedToMatch": false,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "Jefe Email",
+              "readOnly": false,
+              "required": true,
+              "type": "string",
+              "removed": true
+            },
+            {
+              "id": "id",
+              "canBeUsedToMatch": true,
+              "defaultMatch": false,
+              "display": true,
+              "displayName": "ID",
+              "readOnly": true,
+              "required": true,
+              "type": "string",
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.microsoftSharePoint",
+      "typeVersion": 1,
+      "position": [
+        176,
+        -6736
+      ],
+      "id": "d8a63f6d-ed39-408f-9f13-1509c22e7cb7",
+      "name": "Actualizar SharePoint",
+      "credentials": {
+        "microsoftSharePointOAuth2Api": {
+          "id": "ioqEOTNJIkXYe3xe",
+          "name": "Microsoft SharePoint account 5"
+        }
+      },
+      "onError": "continueRegularOutput"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "AD base (sociabpo.sc)": {
+      "main": [
+        [
+          {
+            "node": "ConsultarJefe AD",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Normalizar cargo": {
+      "main": [
+        [
+          {
+            "node": "Pertenece a",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Asignar OU Tecnología": {
+      "main": [
+        [
+          {
+            "node": "Generar username2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Asignar OU Contac": {
+      "main": [
+        [
+          {
+            "node": "Generar username1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Entregar Datos": {
+      "main": [
+        [
+          {
+            "node": "Guardar usuarioDirectorio1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Asignar OU Contraloria": {
+      "main": [
+        [
+          {
+            "node": "Generar username2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Asignar OU Administracion": {
+      "main": [
+        [
+          {
+            "node": "Generar username2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Asignar OU Servicio": {
+      "main": [
+        [
+          {
+            "node": "Generar username2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "AD base (sociabpo.sc)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Actualizar SharePoint",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generar username1": {
+      "main": [
+        [
+          {
+            "node": "Consultar usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "¿Usuario existe?1": {
+      "main": [
+        [
+          {
+            "node": "¿Es la misma cédula?1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Usuario creado1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "¿Es la misma cédula?1": {
+      "main": [
+        [
+          {
+            "node": "Notificar Existencia",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Incrementar Intento1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Incrementar Intento1": {
+      "main": [
+        [
+          {
+            "node": "Consultar usuario AD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Usuario creado1": {
+      "main": [
+        [
+          {
+            "node": "VPN2",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generar username2": {
+      "main": [
+        [
+          {
+            "node": "Consultar usuario AD1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "¿Usuario existe?2": {
+      "main": [
+        [
+          {
+            "node": "¿Es la misma cédula?2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Usuario creado2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "¿Es la misma cédula?2": {
+      "main": [
+        [
+          {
+            "node": "Notificar Existencia1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Incrementar Intento2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Incrementar Intento2": {
+      "main": [
+        [
+          {
+            "node": "Consultar usuario AD1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Usuario creado2": {
+      "main": [
+        [
+          {
+            "node": "VPN2",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GruopVPN2": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GroupSILVER2": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "VPN2": {
+      "main": [
+        [
+          {
+            "node": "GruopVPN2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "GroupBronze",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "GroupSILVER2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "GroupGOLD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GroupBronze": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "GroupGOLD": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "Merge2": {
+      "main": [
+        [
+          {
+            "node": "Entregar Datos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Consultar usuario AD": {
+      "main": [
+        [
+          {
+            "node": "¿Usuario existe?1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Consultar usuario AD1": {
+      "main": [
+        [
+          {
+            "node": "¿Usuario existe?2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pertenece a": {
+      "main": [
+        [
+          {
+            "node": "Asignar OU Contac",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Asignar OU Tecnología",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Asignar OU Contraloria",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Asignar OU Servicio",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Asignar OU Administracion",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Asignar OU Dirrecion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Asignar OU Dirrecion": {
+      "main": [
+        [
+          {
+            "node": "Generar username2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ConsultarJefe AD": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Normalizar cargo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "5538fe49-de81-4964-aefd-8a06fd50fb4d",
+  "meta": {
+    "instanceId": "1cc18228b98a2342abfb569134beab1251c2dd05fbddc1b19981e658d8a5196a"
+  },
+  "id": "DVP1FYgEuYwJ40MH",
+  "tags": []
+}
